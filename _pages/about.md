@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am an atmospheric chemist and work in the Long-Term Global Change Directorate of the UK's National Centre for Atmospheric Science.  My research interests are in modelling chemistry-climate feedbacks, and in the evolution of atmospheric composition more generally.  
+I am an atmospheric chemist and lecturer in the Atmospheric Chemistry Research Group at the University of Bristol.  My research interests are in modelling chemistry-climate feedbacks, and in the evolution of atmospheric composition more generally.  
 
-Before NCAS, I worked in cloud modelling, aerosol chemistry and various aspects of chemical physics.  
+Before this, I worked for NCAS in their Long Term Climate Change Directorate, and have experience in cloud modelling, aerosol chemistry and various aspects of chemical physics.  
 
 <h3> Other information</h3>
 - 2024 Visiting Researcher, National Institute for Environmental Science, Tsukuba, Japan.
