@@ -16,7 +16,12 @@ Education
 
 Work experience
 ======
-* 2018 - : Senior Research Assistant
+* 2025 -  : Lecturer
+  * School of Chemistry, Bristol University
+  * Line Manager: Jonathan Reid
+
+
+* 2018 - 2024 : Senior Research Assistant
   * National Centre for Atmospheric Science, Cambridge University
   * Projects include: CMIP6 work, ACSIS work, OXBUDS work, BOXMOX work
   * Supervisor: Alex Archibald
