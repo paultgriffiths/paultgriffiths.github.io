@@ -1,7 +1,7 @@
 ---
 date: "2025-05-07 08:59:00-4:00"
 inline: false
-layout: post
+layout: news
 related_posts: false
 title: HTAP2 workshop
 description: Interdisciplinary workshop on Hemispheric Transport of Air Pollution
