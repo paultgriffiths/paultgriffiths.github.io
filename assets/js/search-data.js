@@ -103,6 +103,11 @@ ninja.data = [{
           description: "Challenges of climate model calibration",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_6/";
+            },},{id: "news-back-from-iwggms-takamatsu",
+          title: 'Back from IWGGMS, Takamatsu',
+          description: "Challenges of climate model calibration",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_8/";
             },},{id: "news-ml4o3-paper-featured-in-egu-blog",
           title: 'ML4O3 paper featured in EGU blog',
           description: "",
