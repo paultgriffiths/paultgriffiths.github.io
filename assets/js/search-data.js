@@ -95,7 +95,12 @@ ninja.data = [{
             },},{id: "news-after-a-long-writing-process-it-s-great-to-see-that-our-aerchemmip-review-will-be-coming-to-gmd-thanks-to-laura-wilcox-and-bob-allen-for-the-heavy-lifting-and-to-the-aerchemmip-chemistry-team-alex-fiona-vaishali-lee-paul-michael-for-their-input-to-the-chemistry-parts-link-here",
           title: 'After a long writing process, it’s great to see that our AerChemMIP review...',
           description: "",
-          section: "News",},{id: "news-delighted-to-be-joined-by-final-year-project-students-sophie-luo-and-nancy-whiteside-project-details-soon-at-the-grif-lab-repo",
+          section: "News",},{id: "news-back-from-iwggms-takamatsu",
+          title: 'Back from IWGGMS, Takamatsu',
+          description: "Challenges of climate model calibration",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_8/";
+            },},{id: "news-delighted-to-be-joined-by-final-year-project-students-sophie-luo-and-nancy-whiteside-project-details-soon-at-the-grif-lab-repo",
           title: 'Delighted to be joined by Final Year Project students Sophie Luo and Nancy...',
           description: "",
           section: "News",},{id: "news-vesri-model-calibration-workshop",
@@ -103,11 +108,6 @@ ninja.data = [{
           description: "Challenges of climate model calibration",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_6/";
-            },},{id: "news-back-from-iwggms-takamatsu",
-          title: 'Back from IWGGMS, Takamatsu',
-          description: "Challenges of climate model calibration",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_8/";
             },},{id: "news-ml4o3-paper-featured-in-egu-blog",
           title: 'ML4O3 paper featured in EGU blog',
           description: "",
