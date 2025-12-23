@@ -17,7 +17,7 @@ footer_text: >
 keywords: atmospheric chemistry, climate modelling, ozone, methane, aerosols, jekyll, portfolio
 lang: en
 icon: 🧪
-include: [".well-known"]
+
 url: https://paultgriffiths.github.io
 baseurl: 
 last_updated: false 
