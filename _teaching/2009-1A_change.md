@@ -9,6 +9,4 @@ type: Supervisions
 venue: Cambridge University, Geography Department
 ---
 
-
-
 Small group teaching for the first year Geography Course in Environmental Processes and Change

@@ -9,6 +9,4 @@ type: Supervisions
 venue: Cambridge University, Geography Department
 ---
 
-
-
 Small group teaching for the second year Geography Course in Remote Sensing and the Climate System (basic climate dynamics)

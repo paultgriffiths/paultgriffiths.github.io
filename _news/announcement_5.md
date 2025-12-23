@@ -7,13 +7,11 @@ title: Visit to MRI, Tsukuba
 description: A nice catch up with chemistry-climate friends at Japan Met Research Institute
 ---
 
-
 I had the pleasure of meeting the newest <a href="https://www.iup.uni-heidelberg.de/en/research/atmosphere/alic2e-fiedler-group/cooperations-and-outreach/composition-air-quality-climate-interactions-initiative-cacti-emissions-to-response"> CACTI </a> committee member, Dr Naga Oshima.
 
 ---
 
-
- We had a good chat about chemistry-climate interactions before, during and after a delicious tonkatsu lunch (not pictured).
+We had a good chat about chemistry-climate interactions before, during and after a delicious tonkatsu lunch (not pictured).
 
 
 {% include figure.liquid 

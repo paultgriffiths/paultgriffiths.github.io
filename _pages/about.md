@@ -18,8 +18,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-
-
 We use models to study atmospheric chemistry, and our research focuses on the interactions between atmospheric composition and climate, specifically looking at ozone, methane, and aerosols. Our work focuses on developing and applying numerical models to understand these complex systems.
 
 #### We're recruiting!
@@ -36,4 +34,3 @@ We use models to study atmospheric chemistry, and our research focuses on the in
  <a href="https://www.UKRI.ac.uk">UKRI</a> who fund Reveal-NOx and DeToX, both NERC Highlight Topics.
 
 <a href="https://www.bristol.ac.uk/research/centres/bristol-supercomputing/articles/2025/isambard-ai-is-11th-fastest-supercomputer-in-the-world.html">Isambard-AI</a> for in-kind funding for projects on AI.
-

@@ -5,7 +5,7 @@ import re
 SKIP_DIRS = {".git", "_site", ".jekyll-cache", ".sass-cache", "assets", "_includes", "_layouts", "_sass"}
 
 def fix_markdown_files():
-    print("--- 🧹 Scanning for .md files ---")
+    print("--- 🧹 Scanning for .md files to normalize spacing ---")
     
     for root, dirs, files in os.walk("."):
         dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
@@ -26,74 +26,66 @@ def fix_single_file(filepath):
         return
 
     original_content = content
-    modified = False
-
+    
     # ---------------------------------------------------------
-    # STEP 1: Separate Front Matter (Header) from Body
+    # STEP 1: Identify Front Matter and Body
     # ---------------------------------------------------------
-    # We use this regex to split the file into 3 parts:
-    # Group 1: The Front Matter (starting with ---, ending with --- and a newline)
-    # Group 2: The rest of the Body content
-    split_pattern = r'(\A---\s*\n[\s\S]*?\n---\s*\n)(.*)'
-    match = re.match(split_pattern, content, re.DOTALL)
+    # Matches the YAML block at the start of the file: ^--- ... ---
+    fm_pattern = r'(\A---\s*\n[\s\S]*?\n---)'
+    match = re.match(fm_pattern, content, re.DOTALL)
 
     if match:
         front_matter = match.group(1)
-        body = match.group(2)
-        
+        # Get everything after the front matter
+        body = content[match.end():]
+
         # -----------------------------------------------------
-        # FIX A: Quote Dates (Only in Front Matter)
+        # FIX A: Quote Dates in Front Matter
         # -----------------------------------------------------
         date_pattern = r'(^date:\s+)(?=[0-9])(.*?)\s*$'
         if re.search(date_pattern, front_matter, re.MULTILINE):
             front_matter = re.sub(date_pattern, r'\1"\2"', front_matter, flags=re.MULTILINE)
-            modified = True
-            print(f"📅 Fixed Date: {filepath}")
 
         # -----------------------------------------------------
-        # FIX B: Ensure Blank Line After Front Matter
+        # FIX B: Normalize Horizontal Rules in BODY
         # -----------------------------------------------------
-        # If the body doesn't start with a newline (and isn't empty), add one.
-        if len(body) > 0 and not body.startswith('\n'):
-            body = '\n' + body
-            modified = True
-            print(f"⬇️  Fixed Header Spacing: {filepath}")
+        # This regex finds:
+        # 1. Start of line (?m)^
+        # 2. The dashes '---'
+        # 3. Optional spaces/tabs
+        # 4. The newline immediately following it
+        # 5. ALL subsequent whitespace (\s*)
+        # It replaces all of that with '---\n\n' (Force exactly 1 blank line)
+        body = re.sub(r'(?m)^---[ \t]*\n\s*', '---\n\n', body)
 
         # -----------------------------------------------------
-        # FIX C: Fix Horizontal Rules in Body (---)
+        # FIX C: Normalize Header Spacing
         # -----------------------------------------------------
-        # Look for '---' on its own line that is NOT followed by a blank line.
-        # \n---\s*\n  -> Newline, dashes, optional space, newline
-        # (?!\n)      -> Negative lookahead: NOT followed by another newline
-        hr_pattern = r'(\n---\s*\n)(?!\n)'
+        # Strip all leading newlines from the body so we can control the gap
+        body = body.lstrip('\n\r')
         
-        if re.search(hr_pattern, body):
-            body = re.sub(hr_pattern, r'\1\n', body)
-            modified = True
-            print(f"➖ Fixed Horizontal Rule Spacing: {filepath}")
-
-        # Reconstruct content
-        content = front_matter + body
-
-    else:
-        # If no front matter found, we treat the whole thing as body (rare for Jekyll)
-        # You could apply generic formatting here if needed.
-        pass
+        # Reconstruct: Front Matter + 2 Newlines (1 blank line) + Body
+        if len(body) > 0:
+            content = front_matter + '\n\n' + body
+        else:
+            content = front_matter + '\n'
 
     # ---------------------------------------------------------
     # FIX D: Ensure EOF Newline
     # ---------------------------------------------------------
     if len(content) > 0 and not content.endswith('\n'):
         content += '\n'
-        modified = True
-        print(f"⏎  Fixed EOF : {filepath}")
+    # Check if there are multiple newlines at EOF and trim to one
+    while content.endswith('\n\n'):
+        content = content[:-1]
 
     # ---------------------------------------------------------
     # SAVE
     # ---------------------------------------------------------
-    if modified or content != original_content:
+    if content != original_content:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
+        print(f"🔧 Fixed: {filepath}")
 
 if __name__ == "__main__":
     fix_markdown_files()

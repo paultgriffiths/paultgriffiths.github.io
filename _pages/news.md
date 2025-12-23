@@ -10,8 +10,6 @@ pagination:
   collection: news
 ---
 
-
-
 {% if site.news != blank %}
   {% assign news_size = site.news | size %}
   {% if news_size > 0 %}
