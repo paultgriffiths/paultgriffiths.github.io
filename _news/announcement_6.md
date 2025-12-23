@@ -6,6 +6,7 @@ related_posts: false
 title: VESRI model calibration workshop
 description: Challenges of climate model calibration
 ---
+
 Flying trip to an eerily quiet Washington DC, hosting a very lively Schmidt Sciences Virtual Earth System Research Institute meeting on model calibration. 
 
 ---

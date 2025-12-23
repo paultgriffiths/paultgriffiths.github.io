@@ -6,4 +6,5 @@ related_posts: false
 title: First day of new job
 ---
 
+
 Delighted to start and - first time ever - find a desk ready for me!
