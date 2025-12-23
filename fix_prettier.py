@@ -8,7 +8,6 @@ def fix_markdown_files():
     print("--- 🧹 Scanning for .md files ---")
     
     for root, dirs, files in os.walk("."):
-        # Prevent walking into skip directories
         dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
 
         for file in files:
@@ -28,36 +27,61 @@ def fix_single_file(filepath):
 
     original_content = content
     modified = False
-    
+
     # ---------------------------------------------------------
-    # FIX 1: Quote UNQUOTED dates
+    # STEP 1: Separate Front Matter (Header) from Body
     # ---------------------------------------------------------
-    # Looks for 'date: 2025...' (starting with digit) and quotes it.
-    date_pattern = r'(^date:\s+)(?=[0-9])(.*?)\s*$'
-    if re.search(date_pattern, content, re.MULTILINE):
-        new_content = re.sub(date_pattern, r'\1"\2"', content, flags=re.MULTILINE)
-        if new_content != content:
-            content = new_content
+    # We use this regex to split the file into 3 parts:
+    # Group 1: The Front Matter (starting with ---, ending with --- and a newline)
+    # Group 2: The rest of the Body content
+    split_pattern = r'(\A---\s*\n[\s\S]*?\n---\s*\n)(.*)'
+    match = re.match(split_pattern, content, re.DOTALL)
+
+    if match:
+        front_matter = match.group(1)
+        body = match.group(2)
+        
+        # -----------------------------------------------------
+        # FIX A: Quote Dates (Only in Front Matter)
+        # -----------------------------------------------------
+        date_pattern = r'(^date:\s+)(?=[0-9])(.*?)\s*$'
+        if re.search(date_pattern, front_matter, re.MULTILINE):
+            front_matter = re.sub(date_pattern, r'\1"\2"', front_matter, flags=re.MULTILINE)
             modified = True
             print(f"📅 Fixed Date: {filepath}")
 
-    # ---------------------------------------------------------
-    # FIX 2: Insert Blank Line After Front Matter
-    # ---------------------------------------------------------
-    # Looks for the Front Matter block (\A...---) that is NOT followed by a newline.
-    # \A        = Start of file
-    # [\s\S]*?  = Non-greedy match of any char (including newlines)
-    # (?!\n)    = Negative Lookahead: Next char is NOT a newline
-    fm_pattern = r'(\A---\s*\n[\s\S]*?\n---\s*\n)(?!\n)'
-    
-    if re.search(fm_pattern, content):
-        # We replace the block with itself + a newline (\n)
-        content = re.sub(fm_pattern, r'\1\n', content, count=1)
-        modified = True
-        print(f"↔️  Fixed Space: {filepath}")
+        # -----------------------------------------------------
+        # FIX B: Ensure Blank Line After Front Matter
+        # -----------------------------------------------------
+        # If the body doesn't start with a newline (and isn't empty), add one.
+        if len(body) > 0 and not body.startswith('\n'):
+            body = '\n' + body
+            modified = True
+            print(f"⬇️  Fixed Header Spacing: {filepath}")
+
+        # -----------------------------------------------------
+        # FIX C: Fix Horizontal Rules in Body (---)
+        # -----------------------------------------------------
+        # Look for '---' on its own line that is NOT followed by a blank line.
+        # \n---\s*\n  -> Newline, dashes, optional space, newline
+        # (?!\n)      -> Negative lookahead: NOT followed by another newline
+        hr_pattern = r'(\n---\s*\n)(?!\n)'
+        
+        if re.search(hr_pattern, body):
+            body = re.sub(hr_pattern, r'\1\n', body)
+            modified = True
+            print(f"➖ Fixed Horizontal Rule Spacing: {filepath}")
+
+        # Reconstruct content
+        content = front_matter + body
+
+    else:
+        # If no front matter found, we treat the whole thing as body (rare for Jekyll)
+        # You could apply generic formatting here if needed.
+        pass
 
     # ---------------------------------------------------------
-    # FIX 3: Add single newline at EOF
+    # FIX D: Ensure EOF Newline
     # ---------------------------------------------------------
     if len(content) > 0 and not content.endswith('\n'):
         content += '\n'
@@ -65,9 +89,9 @@ def fix_single_file(filepath):
         print(f"⏎  Fixed EOF : {filepath}")
 
     # ---------------------------------------------------------
-    # SAVE (Only if changes were made)
+    # SAVE
     # ---------------------------------------------------------
-    if modified:
+    if modified or content != original_content:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
 
