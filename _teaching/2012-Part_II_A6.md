@@ -10,4 +10,5 @@ venue: Cambridge University, Chemistry Dept
 ---
 
 
+
 A6 'Concepts in Physical Chemistry" covers quantum mechanics, spectroscopy.  I lectured and examined this course from 2012 to 2015.

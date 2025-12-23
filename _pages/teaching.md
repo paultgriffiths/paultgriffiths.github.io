@@ -8,6 +8,7 @@ nav_order: 5
 ---
 
 
+
 {% assign teaching = site.teaching | sort: 'date' | reverse %}
 
 {% for post in teaching %}

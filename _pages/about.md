@@ -19,6 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
+
 We use models to study atmospheric chemistry, and our research focuses on the interactions between atmospheric composition and climate, specifically looking at ozone, methane, and aerosols. Our work focuses on developing and applying numerical models to understand these complex systems.
 
 #### We're recruiting!

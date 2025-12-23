@@ -8,6 +8,7 @@ nav_order: 6
 ---
 
 
+
 {% if site.data.repositories.github_users %}
 
 ## GitHub users
@@ -19,6 +20,7 @@ nav_order: 6
 </div>
 
 ---
+
 
 {% if site.repo_trophies.enabled %}
 {% for user in site.data.repositories.github_users %}
