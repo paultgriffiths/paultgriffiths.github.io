@@ -2,11 +2,33 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Materials and courses.
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+{% assign teaching = site.teaching | sort: 'date' | reverse %}
 
-Organize your courses by years, topics, or universities, however you like!
+{% for post in teaching %}
+<div class="card mt-3">
+  <div class="card-body">
+    <h3 class="card-title">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ post.title }}</a>
+      {% else %}
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% endif %}
+    </h3>
+    
+    <h6 class="card-subtitle mb-2 text-muted">
+      {{ post.type }}
+      {% if post.venue %}| {{ post.venue }}{% endif %}
+      {% if post.date %}| {{ post.date | date: "%Y" }}{% endif %}
+    </h6>
+
+    <div class="card-text">
+      {{ post.content | markdownify | truncatewords: 50 }}
+    </div>
+  </div>
+</div>
+{% endfor %}

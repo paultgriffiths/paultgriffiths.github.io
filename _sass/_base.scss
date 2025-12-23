@@ -3,7 +3,20 @@
  ******************************************************************************/
 
 // Typography
+// --- ADD THIS BLOCK ---
+// 1. HEADERS: Use "PT Sans Narrow"
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", sans-serif !important;
+  font-weight: 700 !important; // Force bold headers like academic-pages
+  // letter-spacing: -0.5px;      // Optional: Tighten it slightly to match the look
+}
 
+// 2. BODY: Use "PT Sans"
+body {
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 1.0rem !important; // 1.1rem matches the academic-pages size better
+}
+// ----------------------
 p,
 h1,
 h2,
@@ -401,7 +414,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       img {

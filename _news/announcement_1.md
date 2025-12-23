@@ -1,8 +1,9 @@
 ---
-layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-01-04 08:59:00
 inline: true
+layout: post
 related_posts: false
+title: First day of new job
 ---
 
-A simple inline announcement.
+Delighted to start and - first time ever - find a desk ready for me!

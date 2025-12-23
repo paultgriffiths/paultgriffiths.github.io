@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - paultgriffiths
+  
+repo_description_lines_max: 3
 
-repo_description_lines_max: 2
+github_repos: 
 
-github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+- ML4O3/Applications-of-Machine-Learning-and-Artificial-Intelligence-in-Tropospheric-Ozone-Research/tree/main
