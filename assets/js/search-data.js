@@ -90,7 +90,7 @@ ninja.data = [{
           description: "Interdisciplinary workshop on Hemispheric Transport of Air Pollution",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_7/";
-            },},{id: "news-after-a-long-writing-process-it-s-great-to-see-that-our-aerchemmip-review-will-be-coming-to-gmd-thanks-to-laura-wilcox-and-bob-allen-for-the-heavy-lifting-and-to-the-aerchemmip-chemistry-team-alex-fiona-vaishali-lee-paul-for-their-input-to-the-chemistry-parts-link-here",
+            },},{id: "news-after-a-long-writing-process-it-s-great-to-see-that-our-aerchemmip-review-will-be-coming-to-gmd-thanks-to-laura-wilcox-and-bob-allen-for-the-heavy-lifting-and-to-the-aerchemmip-chemistry-team-alex-fiona-vaishali-lee-paul-michael-for-their-input-to-the-chemistry-parts-link-here",
           title: 'After a long writing process, it’s great to see that our AerChemMIP review...',
           description: "",
           section: "News",},{id: "news-delighted-to-be-joined-by-final-year-project-students-sophie-luo-and-nancy-whiteside-project-details-soon-at-the-grif-lab-repo",
