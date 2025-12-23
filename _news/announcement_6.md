@@ -32,3 +32,5 @@ I would summarise the key challenges as
     - The climate system involves complex, non-linear interactions and feedbacks (e.g., chemistry-aerosol-cloud interactions, climate state-dependent feedbacks) that are difficult to fully capture in models. For example, the strength of feedbacks can change depending on the background climate state (like glacial vs. interglacial).
         
     - Solving the "stiff" systems of equations required for atmospheric chemistry is a known computational bottleneck.
+
+<img src="https://www.instagram.com/paultgriffiths/p/DQfdjpfDNlj/" alt="post meeting walk">
