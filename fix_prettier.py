@@ -1,7 +1,7 @@
 import os
 import re
 
-# Directories to skip to avoid breaking site builds or git
+# Directories to skip
 SKIP_DIRS = {".git", "_site", ".jekyll-cache", ".sass-cache", "assets", "_includes", "_layouts", "_sass"}
 
 def fix_markdown_files():
@@ -28,39 +28,45 @@ def fix_single_file(filepath):
 
     original_content = content
     modified = False
-
-    # ---------------------------------------------------------
-    # FIX 1: Quote UNQUOTED dates only
-    # ---------------------------------------------------------
-    # Logic:
-    # ^date:\s+   -> Find 'date:' at start of line followed by space
-    # (?=[0-9])   -> LOOKAHEAD: Ensure the next character is a DIGIT (0-9)
-    # (.*?)       -> Capture the date content
-    # \s*$        -> Handle end of line
-    #
-    # If the date starts with " or ', the lookahead (?=[0-9]) fails, 
-    # so it skips the line.
-    # ---------------------------------------------------------
-    date_pattern = r'(^date:\s+)(?=[0-9])(.*?)\s*$'
     
+    # ---------------------------------------------------------
+    # FIX 1: Quote UNQUOTED dates
+    # ---------------------------------------------------------
+    # Looks for 'date: 2025...' (starting with digit) and quotes it.
+    date_pattern = r'(^date:\s+)(?=[0-9])(.*?)\s*$'
     if re.search(date_pattern, content, re.MULTILINE):
-        # Result: date: "2025-01-04 08:59:00"
-        content = re.sub(date_pattern, r'\1"\2"', content, flags=re.MULTILINE)
-        
-        # Double check we actually changed something
-        if content != original_content:
+        new_content = re.sub(date_pattern, r'\1"\2"', content, flags=re.MULTILINE)
+        if new_content != content:
+            content = new_content
             modified = True
             print(f"📅 Fixed Date: {filepath}")
 
     # ---------------------------------------------------------
-    # FIX 2: Add single newline at end of file (EOF)
+    # FIX 2: Insert Blank Line After Front Matter
+    # ---------------------------------------------------------
+    # Looks for the Front Matter block (\A...---) that is NOT followed by a newline.
+    # \A        = Start of file
+    # [\s\S]*?  = Non-greedy match of any char (including newlines)
+    # (?!\n)    = Negative Lookahead: Next char is NOT a newline
+    fm_pattern = r'(\A---\s*\n[\s\S]*?\n---\s*\n)(?!\n)'
+    
+    if re.search(fm_pattern, content):
+        # We replace the block with itself + a newline (\n)
+        content = re.sub(fm_pattern, r'\1\n', content, count=1)
+        modified = True
+        print(f"↔️  Fixed Space: {filepath}")
+
+    # ---------------------------------------------------------
+    # FIX 3: Add single newline at EOF
     # ---------------------------------------------------------
     if len(content) > 0 and not content.endswith('\n'):
         content += '\n'
         modified = True
         print(f"⏎  Fixed EOF : {filepath}")
 
-    # Save
+    # ---------------------------------------------------------
+    # SAVE (Only if changes were made)
+    # ---------------------------------------------------------
     if modified:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
