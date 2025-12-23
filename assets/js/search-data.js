@@ -82,10 +82,12 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-delighted-to-start-and-first-time-ever-find-a-desk-ready-for-me",
-          title: 'Delighted to start and - first time ever - find a desk ready...',
+            },},{id: "news-first-day-of-new-job",
+          title: 'First day of new job',
           description: "",
-          section: "News",},{id: "news-htap2-workshop",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_1/";
+            },},{id: "news-htap2-workshop",
           title: 'HTAP2 workshop',
           description: "Interdisciplinary workshop on Hemispheric Transport of Air Pollution",
           section: "News",handler: () => {
@@ -101,10 +103,12 @@ ninja.data = [{
           description: "Challenges of climate model calibration",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_6/";
-            },},{id: "news-speaking-of-blogs-the-egu-has-kindly-featured-our-hickman-et-al-paper-on-applications-of-machine-learning-and-artificial-intelligence-in-tropospheric-ozone-research-in-its-blog-thanks-to-roxana-cremer-for-putting-the-blog-post-together",
-          title: 'Speaking of blogs, the EGU has kindly featured our Hickman et al. paper...',
+            },},{id: "news-ml4o3-paper-featured-in-egu-blog",
+          title: 'ML4O3 paper featured in EGU blog',
           description: "",
-          section: "News",},{id: "news-visit-to-mri-tsukuba",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
+            },},{id: "news-visit-to-mri-tsukuba",
           title: 'Visit to MRI, Tsukuba',
           description: "A nice catch up with chemistry-climate friends at Japan Met Research Institute",
           section: "News",handler: () => {
