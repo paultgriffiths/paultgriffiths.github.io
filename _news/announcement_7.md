@@ -1,5 +1,5 @@
 ---
-date: 2025-05-07 08:59:00-4:00
+date: "2025-05-07 08:59:00-4:00"
 inline: false
 layout: post
 related_posts: false

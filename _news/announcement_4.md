@@ -1,5 +1,5 @@
 ---
-date: 2025-10-01 08:59:00
+date: "2025-10-01 08:59:00"
 inline: true
 layout: post
 related_posts: false

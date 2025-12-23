@@ -1,6 +1,6 @@
 ---
 collection: teaching
-date: 2012-03-01
+date: "2012-03-01"
 layout: page
 location: Cambridge, United Kingdom
 permalink: /teaching/2009-Geog-1B

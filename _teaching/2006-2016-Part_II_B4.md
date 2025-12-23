@@ -1,6 +1,6 @@
 ---
 collection: teaching
-date: 2016-11-01
+date: "2016-11-01"
 layout: page
 location: Cambridge, United Kingdom
 permalink: /teaching/2006-B4

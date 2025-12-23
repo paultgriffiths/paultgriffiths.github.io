@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/2020-11-04
 venue: "UKESM group, online"
-date: 2020-11-04
+date: "2020-11-04"
 location: "Exeter, United Kingdom"
 ---
 

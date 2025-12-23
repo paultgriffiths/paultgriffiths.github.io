@@ -1,5 +1,5 @@
 ---
-date: 2025-10-31 08:59:00-4:00
+date: "2025-10-31 08:59:00-4:00"
 inline: false
 layout: post
 related_posts: false

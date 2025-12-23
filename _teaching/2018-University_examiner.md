@@ -1,6 +1,6 @@
 ---
 collection: teaching
-date: 2017-12-31-2018-06-30
+date: "2017-12-31-2018-06-30"
 layout: page
 location: Cambridge, United Kingdom
 permalink: /teaching/2018-IB-examiner

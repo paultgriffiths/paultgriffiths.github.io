@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/2020-06-17
 venue: "NCAS Seminars, online"
-date: 2020-12-02
+date: "2020-12-02"
 location: "Leeds, United Kingdom"
 ---
 
