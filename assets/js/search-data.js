@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/index.html";
           },
+        },{id: "nav-talks",
+          title: "talks",
+          description: "Locations where I have given seminars and talks.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/talks/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "",
@@ -268,6 +275,11 @@ ninja.data = [{
           description: "",
           section: "Talks",handler: () => {
               window.location.href = "/talks/2024-05-29_UCLA";
+            },},{id: "talks-ozone-budgets-with-lessons-from-cmip6",
+          title: 'Ozone budgets (with lessons from CMIP6)',
+          description: "Talk at the HTAP OPNS workshop",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/2025-05-08-Potsdam/";
             },},{id: "teaching-part-1a-chemistry",
           title: 'Part 1A Chemistry',
           description: "",
