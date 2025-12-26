@@ -2,7 +2,7 @@
 layout: page
 permalink: /talks/
 title: talks
-description: Locations where I have given seminars and talks.
+description: Seminars, talks and meetings
 nav: true
 nav_order: 4
 ---
@@ -10,7 +10,7 @@ nav_order: 4
 <div id="talks-map" style="height: 500px; width: 100%; z-index: 1; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></div>
 
 <div class="mt-4">
-    <h3>talks List</h3>
+    <h3>Seminars and meetings</h3>
     <div class="table-responsive">
         <table class="table table-sm table-borderless">
             {% for talk in site.data.talks_locations reversed %}
