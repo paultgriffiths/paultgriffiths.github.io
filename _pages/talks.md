@@ -41,7 +41,6 @@ nav_order: 4
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
 <script>
     var map = L.map('talks-map').setView([30.0, 10.0], 2);
 
@@ -51,12 +50,33 @@ nav_order: 4
         maxZoom: 20
     }).addTo(map);
 
+    // 1. Define the Custom Icons
+    var blueIcon = new L.Icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
+    var redIcon = new L.Icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
+    // 2. Load Data from Jekyll
     var talks = [
         {% for talk in site.data.talks_locations %}
         {
             "name": "{{ talk.name }}",
             "lat": {{ talk.lat }},
             "lng": {{ talk.lng }},
+            "category": "{{ talk.category }}", 
             "title": "{{ talk.title }}",
             "year": "{{ talk.year }}",
             "url": "{% if talk.url %}{{ talk.url | relative_url }}{% endif %}",
@@ -65,6 +85,7 @@ nav_order: 4
         {% endfor %}
     ];
 
+    // 3. Loop and Assign Icons
     talks.forEach(function(t) {
         var popupContent = "<b>" + t.title + " (" + t.year + ")</b><br>" + t.name + "<br><br>";
         
@@ -75,7 +96,37 @@ nav_order: 4
             popupContent += '<a href="' + t.pdf + '" target="_blank">Download PDF</a>';
         }
 
-        var marker = L.marker([t.lat, t.lng]).addTo(map);
+        var chosenIcon = blueIcon; // Default (Seminar/Talk)
+        if (t.category === 'meeting') {
+            chosenIcon = redIcon;
+        }
+
+        var marker = L.marker([t.lat, t.lng], {icon: chosenIcon}).addTo(map);
         marker.bindPopup(popupContent);
     });
+
+    // 4. Create the Legend
+    var legend = L.control({position: 'bottomright'});
+
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'info legend');
+        
+        // Inline CSS for the legend box
+        div.style.backgroundColor = "white";
+        div.style.padding = "10px";
+        div.style.border = "1px solid #ccc";
+        div.style.borderRadius = "5px";
+        div.style.boxShadow = "0 0 15px rgba(0,0,0,0.2)";
+        div.style.fontSize = "14px";
+        div.style.lineHeight = "20px";
+
+        // Legend HTML content
+        // We use the same image URLs as the markers but scale them down (height="20")
+        div.innerHTML += '<div style="margin-bottom: 5px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png" height="20" style="vertical-align: middle;"> <b>Conference</b></div>';
+        div.innerHTML += '<div><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" height="20" style="vertical-align: middle;"> <b>Seminar / Talk</b></div>';
+        
+        return div;
+    };
+
+    legend.addTo(map);
 </script>

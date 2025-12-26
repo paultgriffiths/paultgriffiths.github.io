@@ -106,6 +106,13 @@
   year: 2022
   url: "/talks/2022-05-23_EGU"
 
+- name: Manchester, UK
+  lat: 53.4808
+  lng: -2.2426
+  title: "IGAC 2022"
+  year: 2022
+  category: "meeting"
+
 - name: Yokohama, Japan
   lat: 35.4437
   lng: 139.6380
@@ -122,6 +129,20 @@
   url: "/talks/2022-11-10-ToDai"
   pdf: "assets/files/2022-11-10_U_Tokyo.pdf"
 
+- name: Cologne, Germany
+  lat: 50.9375
+  lng: 6.96
+  title: "ML4O3 meeting, Cologne"
+  year: 2023
+  category: "meeting"
+
+- name: Kiel, Germany
+  lat: 54.3233
+  lng: 10.1228
+  title: "CACTI meeting, Kiel"
+  year: 2023
+  category: "meeting"
+  
 - name: Tsukuba, Japan
   lat: 36.0835
   lng: 140.0763
@@ -129,6 +150,13 @@
   year: 2023
   url: "/talks/2023-11-28-MRI"
   pdf: "assets/files/2023-11-28_MRI.pdf"
+
+- name: San Francisco, USA
+  lat: 36.77749
+  lng: -122.4194
+  title: "AGU23"
+  year: 2023
+  category: "meeting"
 
 - name: Los Angeles, USA
   lat: 34.0689
@@ -138,6 +166,21 @@
   year: 2024
   url: "/talks/2024-05-29_UCLA"
   pdf: "assets/files/2024-05-29_PTG.pdf"
+
+- name: Quadrennial Ozone Symposium
+  lat: 39.5501
+  lng: -105.7821
+  category: "meeting"
+  year: 2024
+
+
+- name: Kuala Lumpur, Malaysia
+  lat: 3.1319
+  lng: 101.6841
+  title: "IGAC 2024"
+  year: 2024
+  category: "meeting"
+  url: "/talks/2020-01-29"
 
 - name: Yonsei University, Seoul
   lat: 37.5665
@@ -151,9 +194,19 @@
   lng: 13.0645
   title: "Ozone budgets (with lessons from CMIP6)"
   description: "Short talk on ozone budgets in CMIP6 and caveats"
+  category: "talk" 
   year: 2025
   url: "/talks/2025-05-08-Potsdam/"
   pdf: "assets/files/2025-05-08_Griffiths-Potsdam.pdf"
+
+- name: Exeter, UK
+  lat: 50.7184
+  lng: -3.5339
+  title: "CACTI meeting"
+  year: 2025
+  category: "meeting"
+  url: "/talks/2021-04-13"
+  pdf: "assets/files/2021-04-13_UKESM_bites.pdf"
 
 - name: Bristol, UK
   lat: 51.4545
