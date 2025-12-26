@@ -4,7 +4,7 @@ title: "Stratopsheric influence on tropospheric ozone trends"
 description: ""
 collection: talks
 type: "Talk"
-permalink: /talks/2020-06-17
+permalink: /talks/2020-12-02
 venue: "NCAS Seminars, online"
 date: "2020-12-02"
 location: "Leeds, United Kingdom"
