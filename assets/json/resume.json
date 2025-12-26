@@ -98,10 +98,33 @@
     {
       "organization": "International Ozone Commission, IO3C", 
       "position": "Member",
-      "startDate": "2024-00-01",
+      "startDate": "2024-09-01",
       "endDate": null,
       "url": "https://www.io3c.org",
       "summary": "The IO3C represents the entire community of geophysical scientists around the world, to help organize the study of ozone around the world, including ground-based and satellite measurement programs and analyses of the atmospheric chemistry and dynamical processes affecting ozone."
+    },
+    {
+      "organization": "AerChemMIP Advisory Group",
+      "position": "Member",
+      "startDate": "2022-06-01",
+      "endDate": null,
+      "url":"https://wcrp-cmip.org/mips/aerchemmip2/",
+      "summary": "Contributing to CMIP7 chemistry-climate modelling strategy"
+    },
+    {
+      "organization": "Composition Air Quality Climate Interactions Initiative (CACTI)",
+      "position": "Committee Member",
+      "startDate": "2022-06-01",
+      "endDate": null,
+      "url": "https://www.iup.uni-heidelberg.de/en/research/atmosphere/alic2e-fiedler-group/cooperations-and-outreach/composition-air-quality-climate-interactions-initiative-cacti-emissions-to-response",
+      "summary": "Contributing to CMIP7 chemistry-climate modelling strategy"
+    },
+    {
+      "organization": "UKCA Science Management Board",
+      "position": "Member",
+      "startDate": "2019-01-01",
+      "endDate": null,
+      "summary": "Discussions about UKCA modelling strategy"
     },
     {
       "organization": "Royal Meteorological Society Conference 2020", 
@@ -126,12 +149,6 @@
       "summary": "Co-chair with Ryan Hossaini of the RMS Atmospheric Chemistry Special Interest Group"
     },
     {
-      "organization": "UKCA Science Management Board",
-      "position": "Member",
-      "startDate": "2019-01-01",
-      "endDate": null,
-      "summary": "Discussions about UKCA modelling strategy"
-    }
   ],
   "education": [
     {
