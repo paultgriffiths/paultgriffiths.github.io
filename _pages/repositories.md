@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: code
 description: Group code and Github repositories
-nav: true
+nav: false
 nav_order: 6
 ---
 
