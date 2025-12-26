@@ -155,3 +155,10 @@
   url: "/talks/2025-05-08-Potsdam/"
   pdf: "assets/files/2025-05-08_Griffiths-Potsdam.pdf"
 
+- name: Bristol, UK
+  lat: 51.4545
+  lng: -2.5879
+  title: "Chemistry-Climate studies of tropospheric ozone and other short-lived climate forcers"
+  description: "My favourite talk title as a seminar to the Bristol Research Initiative for the Dynamic Global Environment (BRIDGE)"
+  year: 2025
+
