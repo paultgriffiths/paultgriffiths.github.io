@@ -4,5 +4,4 @@ github_users:
 repo_description_lines_max: 3
 
 github_repos: 
-
-- ML4O3/Applications-of-Machine-Learning-and-Artificial-Intelligence-in-Tropospheric-Ozone-Research/tree/main
+  - ML4O3/Applications-of-Machine-Learning-and-Artificial-Intelligence-in-Tropospheric-Ozone-Research
