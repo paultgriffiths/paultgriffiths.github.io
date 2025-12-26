@@ -194,7 +194,7 @@ ninja.data = [{
           title: 'Ozone budget and trends in AerChemMIP integrations using UKESM-1',
           description: "",
           section: "Talks",handler: () => {
-              window.location.href = "/talks/2020-01-29";
+              window.location.href = "/talks/2019-06-11";
             },},{id: "talks-studies-of-recent-tropospheric-ozone-trends-using-the-ukca-chemistry-climate-model",
           title: 'Studies of Recent Tropospheric Ozone Trends using the UKCA Chemistry Climate Model',
           description: "",
@@ -229,7 +229,7 @@ ninja.data = [{
           title: 'Stratopsheric influence on tropospheric ozone trends',
           description: "",
           section: "Talks",handler: () => {
-              window.location.href = "/talks/2020-06-17";
+              window.location.href = "/talks/2020-12-02";
             },},{id: "talks-quantifying-radiative-forcing-impacts-of-a-shift-to-a-hydrogen-economy-using-a-chemistry-climate-model",
           title: 'Quantifying radiative forcing impacts of a shift to a hydrogen economy using a...',
           description: "",
@@ -304,7 +304,7 @@ ninja.data = [{
           title: 'Chemistry of the Atmosphere',
           description: "",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/2006-B4";
+              window.location.href = "/teaching/2003-B4";
             },},{id: "teaching-chemistry-of-the-atmosphere",
           title: 'Chemistry of the Atmosphere',
           description: "",
