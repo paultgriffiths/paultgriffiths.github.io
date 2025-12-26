@@ -31,6 +31,6 @@ We use models to study atmospheric chemistry, and our research focuses on the in
 
 <a href="https://www.schmidtsciences.org">Schmidt Sciences</a> who fund <a href="https://fetch4.org">FETCH4 </a>.
 
- <a href="https://www.ukri.org">UKRI</a> who fund <a href="https://gtr.ukri.org/project/A06B3D30-61E7-42F7-9353-DBC9F1321B34"Reveal-NOx</a> and <a href="https://gtr.ukri.org/projects?ref=UKRI2168" >DeToX </a>, both NERC Highlight Topics.
+ <a href="https://www.ukri.org">UKRI</a> who fund <a href="https://gtr.ukri.org/project/A06B3D30-61E7-42F7-9353-DBC9F1321B34"> Reveal-NOx</a> and <a href="https://gtr.ukri.org/projects?ref=UKRI2168" >DeToX </a>, both NERC Highlight Topics.
 
 <a href="https://www.bristol.ac.uk/research/centres/bristol-supercomputing/articles/2025/isambard-ai-is-11th-fastest-supercomputer-in-the-world.html">Isambard-AI</a> for in-kind funding for projects on AI.

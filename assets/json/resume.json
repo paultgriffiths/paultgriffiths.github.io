@@ -23,6 +23,7 @@
       "url": "https://www.bristol.ac.uk/chemistry/research/acrg/",
       "startDate": "2025-01-01",
       "endDate": null,
+      "location": "Bristol, UK",
       "summary": "Lecturer at the School of Chemistry, based in the Atmospheric Chemistry Research Group and the Cabot Institute for the Environment",
       "highlights": []
     },
@@ -30,8 +31,9 @@
       "name": "National Centre for Atmospheric Science, Cambridge University",
       "position": "Senior Research Assistant",
       "url": "https://www.ncas.ac.uk",
-      "startDate": "2018-01-01",
+      "startDate": "2012-01-01",
       "endDate": "2024-12-31",
+      "location": "Cambridge, UK",
       "summary": "Supervisor: Alex Archibald. Line Manager: John Pyle.",
       "highlights": [
       ]
@@ -42,7 +44,8 @@
       "url": "https://www.aori.u-tokyo.ac.jp/english/",
       "startDate": "2023-10-01",
       "endDate": "2023-12-31",
-      "summary": "Collaborator: Prof Ryoichi Imasu",
+      "summary": "Host: Prof Ryoichi Imasu",
+      "location": "Tokyo, JP",
       "highlights": [
         "Visit to an EO group in the Atmosphere and Ocean Research Institute (AORI)"
       ]
@@ -53,7 +56,8 @@
       "url": "https://esd.nies.go.jp/en/",
       "startDate": "2024-10-01",
       "endDate": "2020-12-01",
-      "summary": "Collaborator: Dr Hiroshi Tanimoto",
+      "summary": "Host: Dr Hiroshi Tanimoto",
+      "location": "Tsukuba, JP",
       "highlights": [
         "Collaboration on tropospheric ozone research in the Earth Sciences Division (ESD)"
       ]
@@ -63,8 +67,9 @@
       "position": "Visiting Researcher",
       "url": "",
       "startDate": "2022-04-01",
-      "endDate": "null",
-      "summary": "Collaborator: Dr Prabir Patra, Dr Yugo Kanaya",
+      "endDate": null,
+      "summary": "Hosts: Dr Prabir Patra, Dr Yugo Kanaya",
+      "location": "Yokohama, JP",
       "highlights": [
         "Collaboration on tropospheric methane research"
       ]
@@ -75,7 +80,8 @@
       "url": "",
       "startDate": "2017-01-01",
       "endDate": "2020-12-31",
-      "summary": "Collaborator: Dr Ron Macatangay.",
+      "summary": "Host: Dr Ron Macatangay.",
+      "location": "Chiang Mai, TH",
       "highlights": [
         "Advisorial role"
       ]
@@ -86,14 +92,14 @@
       "organization": "Associate Editor, QJRMS",
       "position": "Member",
       "startDate": "2025-06-01",
-      "endDate": "null",
+      "endDate": null,
       "summary": "Associate Editor of the Quarterly Journal of the Royal Meteorological Society"
     },
     {
       "organization": "International Ozone Commission, IO3C", 
       "position": "Member",
       "startDate": "2024-00-01",
-      "endDate": "null",
+      "endDate": null,
       "url": "https://www.io3c.org",
       "summary": "The IO3C represents the entire community of geophysical scientists around the world, to help organize the study of ozone around the world, including ground-based and satellite measurement programs and analyses of the atmospheric chemistry and dynamical processes affecting ozone."
     },
@@ -110,21 +116,21 @@
       "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-6/",
       "startDate": "2020-01-01",
       "endDate": "2020-12-31",
-      "summary": ""
+      "summary": "Work on Chapter 6: Short-lived climate forcers"
     },
     {
       "organization": "Royal Meteorological Society Atmospheric Chemistry SIG",
       "position": "Co-Chair",
       "startDate": "2020-01-01",
-      "endDate": "null",
+      "endDate": null,
       "summary": "Co-chair with Ryan Hossaini of the RMS Atmospheric Chemistry Special Interest Group"
     },
     {
       "organization": "UKCA Science Management Board",
       "position": "Member",
       "startDate": "2019-01-01",
-      "endDate": "null",
-      "summary": ""
+      "endDate": null,
+      "summary": "Discussions about UKCA modelling strategy"
     }
   ],
   "education": [
@@ -136,7 +142,6 @@
       "studyType": "D.Phil.",
       "startDate": "1994-10-01",
       "endDate": "1998-09-30",
-      "score": "",
       "courses": []
     },
     {
