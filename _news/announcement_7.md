@@ -14,3 +14,4 @@ Nice trip to Potsdam to attend the HTAP2 planning meeting. Tim and Terry did a g
 <!-- Slides here. <a href="assets/pdf/2025-05-08_Griffiths-Potsdam.pdf" > here </a> -->
 
 [Slides]({{ '/assets/pdf/2025-05-08_Griffiths-Potsdam.pdf' | relative_url }})
+

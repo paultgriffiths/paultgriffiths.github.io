@@ -1,5 +1,7 @@
 ---
+layout: page
 title: "Methane emissions in a chemistry-climate model: feedbacks and response"
+description: ""
 collection: talks
 type: "Talk"
 permalink: /talks/2020-02-11
@@ -8,7 +10,7 @@ date: "2020-02-11"
 location: "Cambridge, United Kingdom"
 ---
 
-[Slides](https://paultgriffiths.github.io/files/Griffiths_2020-01-28_CH4.pdf)
+[Slides](/assets/files/Griffiths_2020-01-28_CH4.pdf)
 Methane emissions in a chemistry-climate model: feedbacks and response
 Paul Griffiths, Ines Heimann, Nicola Warwick, Luke Abraham, Alex Archibald, John Pyle
 

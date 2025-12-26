@@ -1,0 +1,157 @@
+- name: Chiang Mai, Thailand
+  lat: 18.7883
+  lng: 98.9853
+  title: "Atmospheric chemistry box modelling for beginners"
+  year: 2017
+  url: "/talks/2017-07-19-LCLUC"
+  description: "LCLUC Training"
+
+- name: Exeter, UK
+  lat: 50.7184
+  lng: -3.5339
+  title: "Intro to the UKCA Chemistry Working Group"
+  year: 2019
+  url: "/talks/2019-03-21-Exeter"
+  pdf: "assets/files/2019-03-21_UKCA_chemistry_WG_intro.pdf"
+
+- name: Vienna, Austria
+  lat: 48.2082
+  lng: 16.3738
+  title: "Tropospheric ozone trends (EGU)"
+  year: 2019
+  url: "/talks/2019-04-10"
+
+- name: Princeton, USA
+  lat: 40.3573
+  lng: -74.6672
+  title: "Ozone budget and trends (TriMIPAthlon)"
+  year: 2019
+  url: "/talks/2020-01-29"
+
+- name: Birmingham, UK
+  lat: 52.4862
+  lng: -1.8904
+  title: "Studies of Recent Tropospheric Ozone Trends"
+  year: 2019
+  url: "/talks/2019-07-02-RMS-ASC"
+  pdf: "assets/files/2019-07-01_RMS_meeting.pdf"
+
+- name: Kuala Lumpur, Malaysia
+  lat: 3.1319
+  lng: 101.6841
+  title: "UKCA Methane and Ozone"
+  year: 2020
+  url: "/talks/2020-01-29"
+
+- name: Cambridge, UK
+  lat: 52.2053
+  lng: 0.1218
+  title: "Methane emissions in a chemistry-climate model"
+  year: 2020
+  url: "/talks/2020-02-11"
+  pdf: "assets/files/Griffiths_2020-01-28_CH4.pdf"
+
+- name: Exeter, UK
+  lat: 50.7184
+  lng: -3.5339
+  title: "Tropospheric ozone burden (UKESM GA)"
+  year: 2020
+  url: "/talks/2020-06-17"
+  pdf: "assets/files/Griffiths_UKESM1_GA_2020-06-17_to_present.pdf"
+
+- name: Exeter, UK
+  lat: 50.7184
+  lng: -3.5339
+  title: "Methane Emissions (UKESM Group)"
+  year: 2020
+  url: "/talks/2020-11-04"
+  pdf: "assets/files/2020-11-04-CH4-ESM_group.pdf"
+
+- name: Exeter, UK
+  lat: 50.7184
+  lng: -3.5339
+  title: "Tropospheric ozone burden (AerChemMIP)"
+  year: 2020
+  url: "/talks/2020-11-09"
+
+- name: Leeds, UK
+  lat: 53.8008
+  lng: -1.5491
+  title: "Stratopsheric influence on tropospheric ozone"
+  year: 2020
+  url: "/talks/2020-06-17"
+  pdf: "assets/files/2020-12-02-NCAS for GH.pdf"
+
+- name: Cambridge, UK
+  lat: 52.2053
+  lng: 0.1218
+  title: "H2 Economy Radiative Forcing"
+  year: 2021
+  url: "/talks/2021-03-10"
+  pdf: "assets/files/2021-03-10-CambZero.pdf"
+
+
+- name: Exeter, UK
+  lat: 50.7184
+  lng: -3.5339
+  title: "Tropospheric ozone burden (Science Bites)"
+  year: 2021
+  url: "/talks/2021-04-13"
+  pdf: "assets/files/2021-04-13_UKESM_bites.pdf"
+
+- name: Vienna, Austria
+  lat: 48.2082
+  lng: 16.3738
+  title: "Stratospheric ozone depletion effects (EGU)"
+  year: 2022
+  url: "/talks/2022-05-23_EGU"
+
+- name: Yokohama, Japan
+  lat: 35.4437
+  lng: 139.6380
+  title: "Chemistry-climate interactions (JAMSTEC)"
+  year: 2022
+  url: "/talks/2022-08-23-JAMSTEC"
+  pdf: "assets/files/2022-08-23_JAMSTEC_reduced.pdf"
+
+- name: Kashiwa, Japan
+  lat: 35.8944
+  lng: 139.9472
+  title: "Chemistry-climate interactions (U. Tokyo)"
+  year: 2022
+  url: "/talks/2022-11-10-ToDai"
+  pdf: "assets/files/2022-11-10_U_Tokyo.pdf"
+
+- name: Tsukuba, Japan
+  lat: 36.0835
+  lng: 140.0763
+  title: "CMIP6 and UKESM1 (MRI)"
+  year: 2023
+  url: "/talks/2023-11-28-MRI"
+  pdf: "assets/files/2023-11-28_MRI.pdf"
+
+- name: Los Angeles, USA
+  lat: 34.0689
+  lng: -118.4452
+  title: "Chemistry-climate interactions (UCLA)"
+  description: "Invited seminar to the Dept of Atmospheric Sciences"
+  year: 2024
+  url: "/talks/2024-05-29_UCLA"
+  pdf: "assets/files/2024-05-29_PTG.pdf"
+
+- name: Yonsei University, Seoul
+  lat: 37.5665
+  lng: 126.9780
+  title: "Chemistry-Climate studies of tropospheric ozone and other short-lived climate forcers"
+  description: "Invited seminar to the Dept of Atmospheric Sciences"
+  year: 2024
+
+- name: Potsdam, Germany
+  lat: 52.3906
+  lng: 13.0645
+  title: "Ozone budgets (with lessons from CMIP6)"
+  description: "Short talk on ozone budgets in CMIP6 and caveats"
+  year: 2025
+  url: "/talks/2025-05-08-Potsdam/"
+  pdf: "assets/files/2025-05-08_Griffiths-Potsdam.pdf"
+

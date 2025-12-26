@@ -1,5 +1,7 @@
 ---
+layout: page
 title: "Tropospheric ozone burden and budget in AerChemMIP experiments"
+description: ""
 collection: talks
 type: "Talk"
 permalink: /talks/2020-11-09

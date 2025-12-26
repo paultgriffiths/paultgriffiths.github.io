@@ -165,16 +165,16 @@
       "url": ""
     }
   ],
-  "skills": [
-    {
-      "name": "Data & Computing",
-      "level": "",
-      "keywords": [
-        "Data Champion",
-        "Archer HPC Champion"
-      ]
-    }
-  ],
+  // "skills": [
+  //   {
+  //     "name": "Data & Computing",
+  //     "level": "",
+  //     "keywords": [
+  //       "Data Champion",
+  //       "Archer HPC Champion"
+  //     ]
+  //   }
+  // ],
   "publications": [
     {
       "name": "See Website",
