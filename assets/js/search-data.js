@@ -357,13 +357,6 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/paultgriffiths", "_blank");
         },
       },{
-        id: 'social-mastodon',
-        title: 'Mastodon',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://fediscience.org/@paultgriffiths", "_blank");
-        },
-      },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
@@ -383,13 +376,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=8hAOwbUAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-zotero',
-        title: 'Zotero',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.zotero.org/paultgriffiths", "_blank");
         },
       },{
       id: 'light-theme',
