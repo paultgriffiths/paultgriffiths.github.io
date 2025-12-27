@@ -329,13 +329,6 @@ ninja.data = [{
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/ELC-30029";
             },},{
-        id: 'social-bluesky',
-        title: 'Bluesky',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://bsky.app/profile/paultgriffiths.github.io", "_blank");
-        },
-      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
@@ -343,18 +336,18 @@ ninja.data = [{
           window.open("https://github.com/paultgriffiths", "_blank");
         },
       },{
-        id: 'social-instagram',
-        title: 'Instagram',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://instagram.com/paultgriffiths", "_blank");
-        },
-      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/paultgriffiths", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=8hAOwbUAAAAJ", "_blank");
         },
       },{
         id: 'social-orcid',
@@ -371,11 +364,18 @@ ninja.data = [{
           window.open("https://osf.io/ea5tm/", "_blank");
         },
       },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
+        id: 'social-bluesky',
+        title: 'Bluesky',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=8hAOwbUAAAAJ", "_blank");
+          window.open("https://bsky.app/profile/paultgriffiths.github.io", "_blank");
+        },
+      },{
+        id: 'social-instagram',
+        title: 'Instagram',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://instagram.com/paultgriffiths", "_blank");
         },
       },{
       id: 'light-theme',
