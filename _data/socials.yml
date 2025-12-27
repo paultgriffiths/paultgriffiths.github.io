@@ -14,7 +14,7 @@ bluesky_url: https://bsky.app/profile/paultgriffiths.github.io # your bluesky UR
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 github_username: paultgriffiths
-# gitlab_username: # your GitLab user name
+# gitlab_username: paultgriffiths # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
 # inspirehep_id: # Inspire HEP author ID
@@ -25,7 +25,7 @@ instagram_id: paultgriffiths # your instagram id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
 linkedin_username: paultgriffiths
-# mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+# mastodon_username: fediscience.org/@paultgriffiths
 # medium_username: # your Medium username
 orcid_id: 0000-0002-1089-340X
 # osf_id: # your OSF ID
@@ -48,5 +48,5 @@ scholar_userid: 8hAOwbUAAAAJ
 # wikipedia_id: # your wikipedia id (Case sensitive)
 # work_url: # work page URL
 # x_username: # your X handle
-# youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+# youtube_id: youtube.com/@paultgriffiths # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: paultgriffiths # your zotero username
