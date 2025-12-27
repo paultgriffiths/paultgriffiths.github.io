@@ -25,7 +25,7 @@ instagram_id: paultgriffiths # your instagram id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
 linkedin_username: paultgriffiths
-mastodon_username: fediscience.org/@paultgriffiths
+## mastodon_username: # fediscience.org/@paultgriffiths
 # medium_username: # your Medium username
 orcid_id: 0000-0002-1089-340X
 osf_id: ea5tm # your OSF ID
@@ -49,4 +49,4 @@ scholar_userid: 8hAOwbUAAAAJ
 # work_url: # work page URL
 # x_username: # your X handle
 # youtube_id: youtube.com/@paultgriffiths # your youtube channel id (youtube.com/@<youtube_id>)
-zotero_username: paultgriffiths # your zotero username
+## zotero_username: paultgriffiths # your zotero username
