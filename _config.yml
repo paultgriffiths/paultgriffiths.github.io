@@ -4,7 +4,7 @@
 
 title: Paul Griffiths 
 first_name: Paul
-middle_name: T.
+middle_name: 
 last_name: Griffiths
 email: # Add your email here (e.g. paul.griffiths@university.edu)
 contact_note: >
@@ -41,7 +41,7 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: false
-search_enabled: true
+search_enabled: false
 socials_in_search: false
 posts_in_search: false
 bib_search: true
