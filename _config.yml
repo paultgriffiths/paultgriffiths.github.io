@@ -169,6 +169,7 @@ exclude:
 keep_files:
   - CNAME
   - .nojekyll
+  - .well-known
 
 plugins:
   - jekyll-archives-v2
