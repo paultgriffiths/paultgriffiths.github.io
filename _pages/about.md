@@ -20,12 +20,12 @@ social: true  # includes social icons at the bottom of the page
 
 We use models to study atmospheric chemistry, and our research focuses on the interactions between atmospheric composition and climate, specifically looking at ozone, methane, and aerosols. Our work focuses on developing and applying numerical models to understand these complex systems.
 
-#### We're recruiting!
+<!-- #### We're recruiting!
 
 - A project on biosphere-aerosol-climate interactions in the NERC GW4 DLTP. Please see the <a href="https://www.nercgw4plus.ac.uk/projects-2025-26/from-forests-to-climate-mitigation-advanced-earth-system-modelling-of-aerosol-cloud-feedbacks"> advert </a> from the NERC GW4 DLTP.
 
 - A project on aerosol-fire-climate interactions via the EPSRC Aerosol CDT <a href="https://www.aerosol-cdt.ac.uk/2026-projects/">call for applicants </a>
-
+ -->
 
 #### Thanks for the funding!
 
