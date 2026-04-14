@@ -85,10 +85,17 @@ ninja.data = [{
           description: "A nice catch up with chemistry-climate friends at Japan Met Research Institute",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_5/";
-            },},{id: "news-looking-forward-to-the-start-of-the-cmip26-workshop-our-session-is-on-day-2-tuesday-morning-at-0930-local-my-poster-is-day-2-poster-board-89",
-          title: 'Looking forward to the start of the CMIP26 workshop. Our session is on...',
+            },},{id: "news-cmip26-kyoto",
+          title: 'CMIP26, Kyoto',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_9/";
+            },},{id: "news-seminar-kyushu",
+          title: 'Seminar, Kyushu',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_10/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
