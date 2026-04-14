@@ -8,6 +8,8 @@ nav_order: 2
 pagination:
   enabled: true
   collection: news
+  sort_field: date
+  sort_reverse: true
 ---
 
 {% if site.news != blank %}
