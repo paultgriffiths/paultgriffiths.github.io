@@ -67,10 +67,12 @@ ninja.data = [{
           description: "Challenges of climate model calibration",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_8/";
-            },},{id: "news-delighted-to-be-joined-by-final-year-project-students-sophie-luo-and-nancy-whiteside-project-details-soon-at-the-grif-lab-repo",
-          title: 'Delighted to be joined by Final Year Project students Sophie Luo and Nancy...',
+            },},{id: "news-welcome-to-the-new-grif-lab-students",
+          title: 'Welcome to the new grif-lab students',
           description: "",
-          section: "News",},{id: "news-vesri-model-calibration-workshop",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4/";
+            },},{id: "news-vesri-model-calibration-workshop",
           title: 'VESRI model calibration workshop',
           description: "Challenges of climate model calibration",
           section: "News",handler: () => {
@@ -95,6 +97,26 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_10/";
+            },},{id: "news-welcome-to-the-group-dr-rayne-holland",
+          title: 'Welcome to the group, Dr Rayne Holland',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_11/";
+            },},{id: "news-ai-ml-residency-at-ukm-bangi-malaysia",
+          title: 'AI/ML residency at UKM, Bangi, Malaysia',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_14/";
+            },},{id: "news-congratulations-to-our-graduating-project-students",
+          title: 'Congratulations to our graduating project students',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_12/";
+            },},{id: "news-talk-at-the-ukca-users-meeting-leeds",
+          title: 'Talk at the UKCA users meeting Leeds',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_15/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
