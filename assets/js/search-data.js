@@ -117,6 +117,16 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_15/";
+            },},{id: "news-welcome-to-the-group-aviva-opsomer",
+          title: 'Welcome to the group, Aviva Opsomer',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_16/";
+            },},{id: "news-welcome-our-new-fyp-students-to-the-group",
+          title: 'Welcome our new FYP students to the group',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_17/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
