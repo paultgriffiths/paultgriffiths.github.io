@@ -282,6 +282,31 @@ ninja.data = [{
           description: "Talk at the HTAP OPNS workshop",
           section: "Talks",handler: () => {
               window.location.href = "/talks/2025-05-08-Potsdam/";
+            },},{id: "talks-tropospheric-ozone-in-cmip-progress-and-challenges-in-quantifying-the-role-of-stratosphere-troposphere-exchange-in-cmip7",
+          title: 'Tropospheric ozone in CMIP: progress and challenges in quantifying the role of stratosphere-troposphere...',
+          description: "Poster for the TOAR-II ROSTEES assessment",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/2026-03-10-CMIP26/";
+            },},{id: "talks-chemistry-climate-studies-of-short-lived-climate-forcing-agents",
+          title: 'Chemistry-climate studies of short-lived climate forcing agents',
+          description: "Seminar at the Center for Oceanic and Atmospheric Research (COAR), RIAM, Kyushu University",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/2026-04-03-KyushuU/";
+            },},{id: "talks-initial-work-with-aurora-and-thailand-air-quality-data",
+          title: 'Initial work with Aurora and Thailand air quality data',
+          description: "Seminar during the AI/ML residency at Universiti Kebangsaan Malaysia",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/2026-07-01-UKM/";
+            },},{id: "talks-the-role-of-aerchemmip-in-advancing-climate-and-air-quality-research",
+          title: 'The role of AerChemMIP in advancing climate and air quality research',
+          description: "Talk at the UKCA users meeting on the AerChemMIP community paper",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/2026-07-14-UKCA/";
+            },},{id: "talks-approaching-fast-differentiable-calibrated-chemistry-models-for-methane-and-tropospheric-oxidation",
+          title: 'Approaching fast, differentiable, calibrated chemistry models for methane and tropospheric oxidation',
+          description: "FETCH4 seminar: paleo box-model OH inversion and the ClimaChem OH scheme",
+          section: "Talks",handler: () => {
+              window.location.href = "/talks/2026-07-22-FETCH4/";
             },},{id: "teaching-part-1a-chemistry",
           title: 'Part 1A Chemistry',
           description: "",
