@@ -1,3 +1,24 @@
+- name: Taipei, Taiwan
+  lat: 25.0330
+  lng: 121.5654
+  title: "Talk, Taiwan"
+  year: 2013
+
+- name: Busan, South Korea
+  lat: 35.1796
+  lng: 129.0756
+  title: "International Aerosol Conference (IAC 2014)"
+  description: "Talk on 2 September; posters on particle-phase kinetics in secondary organic aerosol and photochemical bromine release in the marine boundary layer"
+  year: 2014
+  category: "meeting"
+
+- name: Frascati, Italy
+  lat: 41.8091
+  lng: 12.6800
+  title: "Poster, Frascati"
+  year: 2015
+  category: "meeting"
+
 - name: Chiang Mai, Thailand
   lat: 18.7883
   lng: 98.9853
@@ -26,7 +47,7 @@
   lng: -74.6672
   title: "Ozone budget and trends (TriMIPAthlon)"
   year: 2019
-  url: "/talks/2020-01-29"
+  url: "/talks/2019-06-11"
 
 - name: Birmingham, UK
   lat: 52.4862
@@ -77,9 +98,9 @@
 - name: Leeds, UK
   lat: 53.8008
   lng: -1.5491
-  title: "Stratopsheric influence on tropospheric ozone"
+  title: "Stratospheric influence on tropospheric ozone"
   year: 2020
-  url: "/talks/2020-06-17"
+  url: "/talks/2020-12-02"
   pdf: "assets/files/2020-12-02-NCAS for GH.pdf"
 
 - name: Cambridge, UK
@@ -98,6 +119,15 @@
   year: 2021
   url: "/talks/2021-04-13"
   pdf: "assets/files/2021-04-13_UKESM_bites.pdf"
+
+- name: Exeter, UK
+  lat: 50.7184
+  lng: -3.5339
+  title: "Tropospheric ozone in UKESM1 and other CMIP6 models"
+  description: "UKMO CMIP6 analysis workshop (online)"
+  year: 2021
+  url: "/talks/2021-03-25"
+  pdf: "assets/files/2021-03-25_UK_CMIP6_analysis_UKMO.pdf"
 
 - name: Vienna, Austria
   lat: 48.2082
@@ -129,6 +159,15 @@
   url: "/talks/2022-11-10-ToDai"
   pdf: "assets/files/2022-11-10_U_Tokyo.pdf"
 
+- name: Vienna, Austria
+  lat: 48.2082
+  lng: 16.3738
+  title: "EGU 2023"
+  description: "Poster: tropospheric ozone budget in AerChemMIP experiments"
+  year: 2023
+  category: "meeting"
+  pdf: "assets/files/2023-04-27_EGU_A0.pdf"
+
 - name: Cologne, Germany
   lat: 50.9375
   lng: 6.96
@@ -155,8 +194,10 @@
   lat: 36.77749
   lng: -122.4194
   title: "AGU23"
+  description: "Poster: tropospheric ozone budget in AerChemMIP experiments"
   year: 2023
   category: "meeting"
+  pdf: "assets/files/2023-12-11_AGU_A0.pdf"
 
 - name: Los Angeles, USA
   lat: 34.0689
@@ -167,9 +208,10 @@
   url: "/talks/2024-05-29_UCLA"
   pdf: "assets/files/2024-05-29_PTG.pdf"
 
-- name: Quadrennial Ozone Symposium
-  lat: 39.5501
-  lng: -105.7821
+- name: Boulder, USA
+  lat: 40.0150
+  lng: -105.2705
+  title: "Quadrennial Ozone Symposium"
   category: "meeting"
   year: 2024
 
@@ -180,7 +222,6 @@
   title: "IGAC 2024"
   year: 2024
   category: "meeting"
-  url: "/talks/2020-01-29"
 
 - name: Yonsei University, Seoul
   lat: 37.5665
@@ -205,8 +246,6 @@
   title: "CACTI meeting"
   year: 2025
   category: "meeting"
-  url: "/talks/2021-04-13"
-  pdf: "assets/files/2021-04-13_UKESM_bites.pdf"
 
 - name: Bristol, UK
   lat: 51.4545
@@ -215,3 +254,64 @@
   description: "My favourite talk title as a seminar to the Bristol Research Initiative for the Dynamic Global Environment (BRIDGE)"
   year: 2025
 
+
+- name: Kyoto, Japan
+  lat: 35.0116
+  lng: 135.7681
+  title: "CMIP26 workshop (TOAR-II ROSTEES poster)"
+  description: "Stratosphere-troposphere exchange and tropospheric ozone in CMIP7"
+  year: 2026
+  category: "meeting"
+  url: "/talks/2026-03-10-CMIP26/"
+  pdf: "assets/files/2026-03-10_ROSTEES.pdf"
+
+- name: Fukuoka, Japan
+  lat: 33.5904
+  lng: 130.4017
+  title: "Chemistry-climate studies of short-lived climate forcing agents"
+  description: "Invited seminar at COAR, RIAM, Kyushu University"
+  year: 2026
+  url: "/talks/2026-04-03-KyushuU/"
+  pdf: "assets/files/2026-04-03_KyushuU.pdf"
+
+- name: Rochester, USA
+  lat: 43.1284
+  lng: -77.6293
+  title: "FETCH4 mid-term review"
+  description: "Poster on the methane isotope box model; session chair, Historical Methane Cycle"
+  year: 2026
+  category: "meeting"
+
+- name: Bangi, Malaysia
+  lat: 2.9300
+  lng: 101.7774
+  title: "Initial work with Aurora and Thailand air quality data"
+  description: "Seminar during the AI/ML residency at Universiti Kebangsaan Malaysia"
+  year: 2026
+  url: "/talks/2026-07-01-UKM/"
+  pdf: "assets/files/2026-07-01_UKM.pdf"
+
+- name: Leeds, UK
+  lat: 53.8008
+  lng: -1.5491
+  title: "The role of AerChemMIP in advancing climate and air quality research"
+  description: "Talk at the UKCA users meeting"
+  year: 2026
+  category: "meeting"
+  url: "/talks/2026-07-14-UKCA/"
+  pdf: "assets/files/2026-07-14_UKCA.pdf"
+
+- name: Online (FETCH4)
+  lat: 51.4545
+  lng: -2.5879
+  title: "Approaching fast, differentiable, calibrated chemistry models for methane and tropospheric oxidation"
+  description: "FETCH4 seminar"
+  year: 2026
+  url: "/talks/2026-07-22-FETCH4/"
+  pdf: "assets/files/2026-07-22_FETCH4.pdf"
+
+- name: Yokohama, Japan
+  lat: 35.4437
+  lng: 139.6380
+  title: "UCI CTM forward runs for the GCP-IGAC global CO budget (JAMSTEC)"
+  year: 2026
